@@ -2,6 +2,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import AppHeader from './components/AppHeader.vue'
 import UserProfile from './components/UserProfile.vue'
+import CateGallery from './components/CatGallery.vue'
 </script>
 
 <template>
@@ -17,6 +18,9 @@ import UserProfile from './components/UserProfile.vue'
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <UserProfile />
+
+  <CateGallery />
+  
 </template>
 
 <style scoped>

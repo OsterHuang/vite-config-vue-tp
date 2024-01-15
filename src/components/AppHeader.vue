@@ -13,16 +13,17 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
+const baseUrl = import.meta.env.BASE_URL
 
 interface PageLink {
   label: string;
   url: string;
 }
 const AppLinks: PageLink[] = [
-  {label: 'Home', url: '#'},
-  {label: 'Product', url: '#'},
-  {label: 'Contact Us', url: '/contact'},
-  {label: 'Profile', url: '/profile'},
+  {label: 'Home', url: `${baseUrl}/`},
+  {label: 'Product', url: `${baseUrl}/product`},
+  {label: 'Contact Us', url: `${baseUrl}/contact`},
+  {label: 'Profile', url: `${baseUrl}/profile`},
 ]
 
 const appLinks = reactive<PageLink[]>(AppLinks)
