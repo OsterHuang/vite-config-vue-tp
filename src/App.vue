@@ -1,8 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
 </script>
 
 <template>
+  <AppHeader />
+
   <div class="two-logo flex justify-around">
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
