@@ -21,8 +21,8 @@ interface PageLink {
 const AppLinks: PageLink[] = [
   {label: 'Home', url: '#'},
   {label: 'Product', url: '#'},
-  {label: 'Contact Us', url: '#'},
-  {label: 'Profile', url: './profile'},
+  {label: 'Contact Us', url: '/contact'},
+  {label: 'Profile', url: '/profile'},
 ]
 
 const appLinks = reactive<PageLink[]>(AppLinks)
