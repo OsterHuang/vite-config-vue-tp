@@ -30,7 +30,7 @@ const userProfile = ref<UserProfile>(null)
 const baseUrl = import.meta.env.BASE_URL
 
 onBeforeMount(() => {
-  fetch("/api/user-profile")
+  fetch(`${baseUrl}/api/user-profile`)
     .then(res => res.json())
     .then(resData => {
       console.log("Oster resData", resData)

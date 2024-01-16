@@ -6,16 +6,17 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/vite-config-demo',
   server: {
     proxy: {
-      "/api": {
+      '/vite-config-demo/api': {
         target: "http://localhost:3000",
         changeOrigin: true,
         secure: false,
+        rewrite: (path) => path.replace(`/vite-config-demo/api`, '/api')
       },
     },
   },
-  base: '/vite-config-demo',
   resolve: {
     alias: {
       '@/': `${path.resolve(__dirname, 'src')}/`
