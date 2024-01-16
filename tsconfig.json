@@ -6,6 +6,7 @@
     "importHelpers": true,
     "isolatedModules": true,
     "noEmit": true,
+    "types": ["node", "vite/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

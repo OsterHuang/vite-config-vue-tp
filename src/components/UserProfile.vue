@@ -27,6 +27,7 @@ interface UserProfile {
   title: string
 }
 const userProfile = ref<UserProfile>(null)
+const baseUrl = import.meta.env.BASE_URL
 
 onBeforeMount(() => {
   fetch("/api/user-profile")
