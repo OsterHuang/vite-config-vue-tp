@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between">
 
-    <a v-for="appLink in appLinks" :key="appLink.label" :href="appLink.url">
+    <a v-for="appLink in appLinks" :key="appLink.label" :href="appLink.url" @click="onChangeView(appLink)">
       {{ appLink.label }}
     </a>
 
@@ -13,20 +13,16 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-const baseUrl = import.meta.env.BASE_URL
-
-interface PageLink {
-  label: string;
-  url: string;
-}
-const AppLinks: PageLink[] = [
-  {label: 'Home', url: `${baseUrl}/`},
-  {label: 'Product', url: `${baseUrl}/product`},
-  {label: 'Contact Us', url: `${baseUrl}/contact`},
-  {label: 'Profile', url: `${baseUrl}/profile`},
-]
+import { PageLink, AppLinks } from '../model/AppPageModel'
 
 const appLinks = reactive<PageLink[]>(AppLinks)
+
+const emits = defineEmits(['changeView'])
+
+function onChangeView(appLink: PageLink) {
+  console.log("Oster 9966")
+  emits('changeView', appLink)
+}
 
 </script>
 
