@@ -4,7 +4,7 @@
     "module": "esnext",
     
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -15,9 +15,7 @@
     "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
-      "@*": [
-        "src/*"
-      ]
+      "@/*": ["./src/*"],
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]

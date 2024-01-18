@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, defineAsyncComponent  } from 'vue'
 
-import AppHeader from './components/AppHeader.vue'
+import AppHeader from '@/components/AppHeader.vue'
 
 // import Home from './components/Home.vue'
 // import HelloWorld from './components/HelloWorld.vue'
@@ -9,7 +9,6 @@ import AppHeader from './components/AppHeader.vue'
 // import CatGallery from './components/CatGallery.vue'
 
 import { PageLink, AppLinks } from './model/AppPageModel'
-
 
 
 const chosePage = ref<PageLink>(AppLinks[0])

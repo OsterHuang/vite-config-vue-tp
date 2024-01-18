@@ -1,5 +1,8 @@
 {
   "files.associations": {
     "*.scss": "postcss"
-  }
+  },
+  "path-intellisense.mappings": {
+    "@/": "${workspaceFolder}/src"
+  },
 }
