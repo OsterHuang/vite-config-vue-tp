@@ -2,7 +2,5 @@
   "files.associations": {
     "*.scss": "postcss"
   },
-  "path-intellisense.mappings": {
-    "@/": "${workspaceFolder}/src"
-  },
+  "css.customData": [".vscode/tailwind.json"]
 }

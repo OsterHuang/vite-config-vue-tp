@@ -17,6 +17,7 @@ package-lock.json
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+!.vscode/tailwind.json
 .idea
 .DS_Store
 *.suo
