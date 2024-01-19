@@ -1,7 +1,7 @@
 <template>
   <div class="cat-gallery">
     <div class="image">
-      <img src="../assets/cat-1.jpg">
+      <img :src="`${IMAGE_SERVER_URL}/cat-1.jpg`">
     </div>
     <div class="image">
       <img src="../assets/cat-2.jpg">
@@ -13,6 +13,9 @@
 </template>
 
 <script setup lang="ts">
+const IMAGE_SERVER_URL = import.meta.env.VITE_EXTERNAL_IMAGE_URL
+
+console.log("Oster 4499 IMAGE_SERVER_URL", IMAGE_SERVER_URL)
 </script>
 
 <style scoped lang="scss">

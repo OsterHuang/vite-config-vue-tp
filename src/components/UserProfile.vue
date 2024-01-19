@@ -27,10 +27,11 @@ interface UserProfile {
   title: string
 }
 const userProfile = ref<UserProfile>(null)
-const baseUrl = import.meta.env.BASE_URL
+const apiUrl = import.meta.env.VITE_API_URL
+console.log("Oster 7788 apiUrl", { apiUrl, env: import.meta.env })
 
 onBeforeMount(() => {
-  fetch(`${baseUrl}/api/user-profile`)
+  fetch(`${apiUrl}/api/user-profile`)
     .then(res => res.json())
     .then(resData => {
       console.log("Oster resData", resData)
